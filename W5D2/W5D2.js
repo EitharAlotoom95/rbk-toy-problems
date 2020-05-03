@@ -34,6 +34,15 @@ not a global variable or only the specific example above.
 I.e. If someone called your function with 10 objects 
 (with all safely have the same properties), it should work just as well.
 */
+function tallEnoughToRide (array){
+ var arr = [] 
+ for(i = 0 ; i < array.length; i++){
+  if(array[i].heightInInches >= 48){
+    arr.push(array[i].name)
+  }
+ }
+ return arr
+}
 
 // your answer is here
 
@@ -49,5 +58,13 @@ tallestPerson(groupA); //"Kiana at 55 inches"
 
 
 */
-
+ function tallestPerson (array){
+  var tallest = array[0]
+  for(x = 0 ; x <array.length; x++){
+    if(tallest.heightInInches < array[x].heightInInches){
+    tallest = array[x]
+   }
+  }
+  return tallest
+ }
 // your answer is here
