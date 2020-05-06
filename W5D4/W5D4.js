@@ -98,3 +98,18 @@ Would return a new array with the following elements:
 
 //your answer is here
 
+function shoppingSummary(array){
+  var count = 0
+  var budget = 100
+  return{
+    counter:function(){
+      for(i =0 ; i < array.length ; i++){
+      count++
+    }
+    return count
+  },
+   total:function(amount){
+   return budget - amount 
+   }
+  }
+
